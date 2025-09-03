@@ -35,7 +35,6 @@ STEP-8: Repeat the above steps to generate the entire cipher text.
 #include <string.h>
 #include <ctype.h>
 
-// Function to encrypt a message using Vigenere Cipher
 void encrypt(char text[], char key[], char result[]) {
     int textLen = strlen(text);
     int keyLen = strlen(key);
@@ -53,7 +52,6 @@ void encrypt(char text[], char key[], char result[]) {
     result[i] = '\0';
 }
 
-// Function to decrypt a message using Vigenere Cipher
 void decrypt(char text[], char key[], char result[]) {
     int textLen = strlen(text);
     int keyLen = strlen(key);
